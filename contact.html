@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+    article{
+        width: 70%;
+        margin: auto;
+    }
+
+    main form{
+        background-color: rgb(225, 226, 239);
+        padding: 5%;
+    }
+    fieldset{
+        border: none;
+        padding: 2%;
+        margin: 2%;
+    }
+    main form img{
+        display: block;
+        width: 20%;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    main form h1{
+        color:rgb(244, 185, 66);
+    }
+    main form input{
+        margin-bottom: 2%;
+    }
+
+    main form input[type="text"]{
+        height: 40px;
+        width: 100%;
+    }
+    main form input[type="email"]{
+        width: 100%;
+        height: 40px;
+    }
+    main form input[type="password"]{
+        width: 100%;
+        height: 40px;
+    }
+    main form h1{
+        text-align: center;
+    }
+    main form fieldset:last-of-type{
+
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    main form button{
+
+        margin: 1%;
+        background-color: rgb(5, 32, 74);
+        width: 20%;
+        height: 40px;
+        color: rgb(244, 231, 110);
+    }
+
+    textarea{
+        width: 90%;
+        height: 200px;
+        display: block;
+        margin: auto;
+    }
+</style>
+</head>
+<body>
+    <nav>
+
+        <ul>
+            <li> <a href="index.html">Inicio</a></li>
+            <li><a href="services.html">Servicios</a>
+                <ul>
+                    <li><a href="piscinas.html">Piscinas</a></li>
+                    <li><a href="tenis.html">Tenis</a></li>
+                    <li><a href="#">Actividades dirigidas</a></li>
+                    <li><a href="#">Sala fitness</a></li>
+                    <li><a href="#">Cursos personlizados</a></li>
+                    <li><a href="#">Fiestas de cumpleaños</a></li>
+                    <li><a href="#">Alquiler de espacios</a></li>
+                    <li><a href="#">Centro de salud</a></li>
+                </ul>
+            </li>
+            
+
+            <li><a href="#">Productos</a>
+                <ul>
+                    <li><a href="#">Bañadores</a></li>
+                    <li><a href="#">Toallas</a></li>
+                    <li><a href="#">Gafas y gorros</a></li>
+                    <li><a href="#">Aletas</a></li>
+                    <li><a href="#">Chalecas y flotadores</a></li>
+                    <li><a href="#">Chalecas</a></li>
+                </ul>
+            </li>
+
+
+
+            <li><a href="register.html">Registro</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+
+
+        </ul>
+
+        <form>
+            <table>
+                <tr>
+                    <td><input type="text" name="user" placeholder="user" pattern="[^\s]" minlength="4" maxlength="12" required></td>
+                    <td><input type="password" placeholder="password" pattern="[^\s]" minlength="4" maxlength="12" required></td>
+                    <td><button type="submit">Log in</button></td>
+                </tr>
+            </table>
+        </form>
+    </nav>
+    <header></header>
+
+    <main>
+
+        <article>
+            <form>
+
+                <img src="img/logo.png" alt="logo" title="Club de natación de Terrassa">
+                <h1>Datos personales</h1>
+                <fieldset>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" minlength="3" maxlength="16" required placeholder="Inserte el nombre"></td>
+                    <label for="surname">Apellido:</label>
+                    <input type="text" name="surname" minlength="3" maxlength="16" required placeholder="Inserte el apellido"></td>
+
+
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" placeholder="coloque su email"><br>
+
+                </fieldset>
+
+                
+                <h1>Motivo de la consulta</h1>
+
+                <textarea name="motivo de la consulta"  minlength="10" placeholder="Coloque el motivo de su consulta...."></textarea>
+                <br>
+                <fieldset>
+                    <button type="submit">Registrarse</button>
+                    <button type="reset">Clear</button>
+                </fieldset>
+
+            </form>
+
+        </article>
+
+    </main>
+
+
+
+
+    <footer>
+        
+        <section>
+            <figure>
+            <a href="https://clubnatacioterrassa.cat" target="_blank"><img src="img/logo.png" alt="Logo club Natació Terrassa" title="Club Natació Terrassas"></a>
+            </figure>
+
+        </section>
+        <section><figure><a href="https://www.terrassa.cat/es/esports" target="_blank"><img src="img/terrassa.png" alt="Logo Ajuntament de terrassa" title="Ajuntament de Terrassa"></a></figure></section>
+        <section>
+            <figure>
+                <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook logo" title="Facebook logo"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram logo" title="Instagram logo"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="img/linkedin.png" alt="LinkedIn logo" title="LinkedIn logo"></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png" alt="Twiiter logo" title="Twiiter logo"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="img/youtube.png" alt="Youtube Logo" title="Youtube Logo"></a>
+            </figure>
+        </section>
+    </footer>
+    
+    
+</body>
+</html>

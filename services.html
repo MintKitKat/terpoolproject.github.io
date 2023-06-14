@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+    main section{
+        width: 70%;
+        margin: auto;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+
+    main section:nth-of-type(odd){
+        background: linear-gradient(to right, rgb(225, 226, 239), white);
+    }
+    main section:nth-of-type(even){
+        background: linear-gradient(to right,white, rgb(225, 226, 239));
+    }
+    main section p,h1{
+        display: flex;
+        vertical-align: middle;
+        margin: 2%;
+   }
+   main section  img{
+        width: 100%;
+        vertical-align: middle;
+        object-fit: contain;
+   }
+
+   main section a{
+    color: rgb(66, 122, 161);
+    text-decoration: none;
+   }
+   main section a:hover{
+    color: rgb(244, 231, 110);
+   }
+</style>
+</head>
+<body>
+    <nav>
+
+        <ul>
+            <li> <a href="index.html">Inicio</a></li>
+            <li><a href="services.html">Servicios</a>
+                <ul>
+                    <li><a href="piscinas.html">Piscinas</a></li>
+                    <li><a href="tenis.html">Tenis</a></li>
+                    <li><a href="#">Actividades dirigidas</a></li>
+                    <li><a href="#">Sala fitness</a></li>
+                    <li><a href="#">Cursos personlizados</a></li>
+                    <li><a href="#">Fiestas de cumpleaños</a></li>
+                    <li><a href="#">Alquiler de espacios</a></li>
+                    <li><a href="#">Centro de salud</a></li>
+                </ul>
+            </li>
+            
+
+            <li><a href="#">Productos</a>
+                <ul>
+                    <li><a href="#">Bañadores</a></li>
+                    <li><a href="#">Toallas</a></li>
+                    <li><a href="#">Gafas y gorros</a></li>
+                    <li><a href="#">Aletas</a></li>
+                    <li><a href="#">Chalecas y flotadores</a></li>
+                    <li><a href="#">Chalecas</a></li>
+                </ul>
+            </li>
+
+
+
+            <li><a href="register.html">Registro</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+
+
+        </ul>
+
+        <form>
+            <table>
+                <tr>
+                    <td><input type="text" name="user" placeholder="user" pattern="[^\s]" minlength="4" maxlength="12" required></td>
+                    <td><input type="password" placeholder="password" pattern="[^\s]" minlength="4" maxlength="12" required></td>
+                    <td><button type="submit">Log in</button></td>
+                </tr>
+            </table>
+        </form>
+    </nav>
+    <header></header>
+
+    <main>
+        <section> 
+            
+
+            <figure><img src="img/piscina.jpg" alt=""></figure>
+
+            <article>
+                <a href="piscinas.html">
+                <h1>Escola Aquàtica Temporada 2022-2023</h1></a>
+                <p>
+                    Al Club Natació Terrassa incentivem la pràctica d’aquest esport en nivells formatius, competitius i d’alt rendiment. Estimem el mèdi aquàtic i volem transmetre a tots els esportites valors com el compromís, el respecte o la responsabilitat. Al Club oferim unes instal·lacions de primer nivell per practicar l’esport més saludable. Porta un banyador, un casquet de bany i ulleres. No et cal res més per gaudir de l’aigua.</p>
+                </article>
+                
+        </section>
+
+        <section> 
+
+            <article>
+                <a href="hipo.html">
+                <h1>
+                    Hipopressius (octubre - juny)</h1></a>
+                <p>
+                    Els hipopressius són mètodes posturals i respiratoris que, entre altres factors, augmenten el rendiment esportiu. Millores en la postura, reducció del perímetre de la cintura, rehabilitació de la faixa abdominal després de l’embaràs, disminució dels problemes d’esquena i de la incontinència urinària o revitalització de les funcions sexuals. Les tècniques hipopressives, basades en mètodes avalats científicament, són utilitzats pels fisioterapeutes i se centren a reduir la pressió intraabdominal.</p>
+            </article>
+
+                <figure><img src="img/hipo.jpg" alt="Foto curso Hipopressius (octubre - juny)" title="Curs Hipopressius (octubre - juny)"></figure>
+        </section>
+        <section>
+            <figure><img src="img/txi.jpg" alt="Portada Curs Txi Kung" title="Txi Kung"></figure>
+            <article>
+                <a href="txi.html">
+                <h1>
+                    Txi Kung</h1></a>
+                <p>
+                    És una tècnica mil·lenària oriental que treballa per millorar i enfortir la nostra estructura energètica. Obtindrem una millora a nivell general, ens neteja d’energies de baixes vibracions i allibera als nostres òrgans d’energies negatives.</p>
+            </article>
+
+                
+        </section>
+        <section> 
+
+            <article>
+                <a href="yoga.html">
+                <h1>
+                    Curs de Ioga Integral</h1></a>
+                <p>
+                    El ioga ajuda a prendre consciència progressivament de cada part del nostre cos. Practicar ioga amb regularitat genera beneficis físics: millora de la respiració, reforça el sistema immunològic, augmenta la flexibilitat, millora l’equilibri, enforteix els músculs i els ossos i equilibra el sistema nerviós, desbloquejant el cos i regenerant la pròpia energia (treball ment i cos).</p>
+            </article>
+
+                <figure><img src="img/yoga.jpg" alt="Portada Curs de ioga integral" title="Curs de Ioga Integral"></figure>
+        </section>
+
+
+        <section>
+            <figure><img src="img/rehabilitacion.jpg" alt="Portada Curs rehabilitació" title="Rehabilitació"></figure>
+            <article>
+                <a href="txi.html">
+                <h1>Rehabilitació</h1></a>
+                <p>
+                    L’exercici terapèutic està basat en la realització ordenada i planificada de postures i moviments corporals establerts per un fisioterapeuta, amb la finalitat de rehabilitar, readaptar, millorar o prevenir la gran majoria de lesions i certes patologies o malalties. És una tècnica essencial en els tractaments de fisioteràpia i la clau en qualsevol procés de recuperació postlesió.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        
+        <section>
+            <figure>
+            <a href="https://clubnatacioterrassa.cat" target="_blank"><img src="img/logo.png" alt="Logo club Natació Terrassa" title="Club Natació Terrassas"></a>
+            </figure>
+
+        </section>
+        <section><figure><a href="https://www.terrassa.cat/es/esports" target="_blank"><img src="img/terrassa.png" alt="Logo Ajuntament de terrassa" title="Ajuntament de Terrassa"></a></figure></section>
+        <section>
+            <figure>
+                <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook logo" title="Facebook logo"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram logo" title="Instagram logo"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="img/linkedin.png" alt="LinkedIn logo" title="LinkedIn logo"></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png" alt="Twiiter logo" title="Twiiter logo"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="img/youtube.png" alt="Youtube Logo" title="Youtube Logo"></a>
+            </figure>
+        </section>
+    </footer>
+    
+    
+</body>
+</html>

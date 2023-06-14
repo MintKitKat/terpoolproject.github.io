@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+    article{
+        width: 70%;
+        margin: auto;
+    }
+
+    main form{
+        background-color: rgb(225, 226, 239);
+        padding: 5%;
+    }
+    fieldset{
+        border: none;
+        padding: 2%;
+        margin: 2%;
+    }
+    main form img{
+        display: block;
+        width: 20%;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    main form h1{
+        color:rgb(244, 185, 66);
+    }
+    main form input{
+        margin-bottom: 2%;
+    }
+
+    main form input[type="text"]{
+        height: 40px;
+        width: 100%;
+    }
+    main form input[type="email"]{
+        width: 100%;
+        height: 40px;
+    }
+    main form input[type="password"]{
+        width: 100%;
+        height: 40px;
+    }
+    main form h1{
+        text-align: center;
+    }
+    main form fieldset:nth-of-type(3){
+        background-color: white;
+    }
+    main form fieldset:nth-of-type(3) table td{
+        width: 30%;
+    }
+
+    main form fieldset:last-of-type{
+
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    main form button{
+
+        margin: 1%;
+        background-color: rgb(5, 32, 74);
+        width: 20%;
+        height: 40px;
+        color: rgb(244, 231, 110);
+    }
+
+</style>
+</head>
+<body>
+    <nav>
+
+        <ul>
+            <li> <a href="index.html">Inicio</a></li>
+            <li><a href="services.html">Servicios</a>
+                <ul>
+                    <li><a href="piscinas.html">Piscinas</a></li>
+                    <li><a href="tenis.html">Tenis</a></li>
+                    <li><a href="#">Actividades dirigidas</a></li>
+                    <li><a href="#">Sala fitness</a></li>
+                    <li><a href="#">Cursos personlizados</a></li>
+                    <li><a href="#">Fiestas de cumpleaños</a></li>
+                    <li><a href="#">Alquiler de espacios</a></li>
+                    <li><a href="#">Centro de salud</a></li>
+                </ul>
+            </li>
+            
+
+            <li><a href="#">Productos</a>
+                <ul>
+                    <li><a href="#">Bañadores</a></li>
+                    <li><a href="#">Toallas</a></li>
+                    <li><a href="#">Gafas y gorros</a></li>
+                    <li><a href="#">Aletas</a></li>
+                    <li><a href="#">Chalecas y flotadores</a></li>
+                    <li><a href="#">Chalecas</a></li>
+                </ul>
+            </li>
+
+
+
+            <li><a href="register.html">Registro</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+
+
+        </ul>
+
+        <form>
+            <table>
+                <tr>
+                    <td><input type="text" name="user" placeholder="user" pattern="[^\s]" minlength="4" maxlength="12" required></td>
+                    <td><input type="password" placeholder="password" pattern="[^\s]" minlength="4" maxlength="12" required></td>
+                    <td><button type="submit">Log in</button></td>
+                </tr>
+            </table>
+        </form>
+    </nav>
+    <header></header>
+
+    <main>
+
+        <article>
+            <form>
+
+                <img src="img/logo.png" alt="logo" title="Club de natación de Terrassa">
+                <h1>Datos personales</h1>
+                <fieldset>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" minlength="3" maxlength="16" required placeholder="Inserte el nombre"></td>
+                    <label for="surname">Apellido:</label>
+                    <input type="text" name="surname" minlength="3" maxlength="16" required placeholder="Inserte el apellido"></td>
+
+
+                        <td><label for="dni">DNI:</label></td>
+
+                        <td><input type="text" name="dni" placeholder="DNI" pattern="[0-9]{8}[A-Z]" minlength="9" maxlength="9" required placeholder="Inserte su  dni"></td><br>
+
+
+                        
+                        <input type="radio" name="sex">
+                        <label>Male</label>
+                        <input type="radio" name="sex">
+                        <label>Female</label>
+                        <input type="radio" name="sex" checked>
+                        <label>NonBinary</label>
+
+                        <br>
+
+                        <label>Fecha de nacimiento:</label>
+                        <label>Day</label>
+                        <select name="day">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                        <label>Month</label>
+                        <select name="month">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+
+                        <label>Year</label>
+                        <select name="year">
+                            <option>1980</option>
+                            <option>1981</option>
+                            <option>1982</option>
+                            <option>1983</option>
+                            <option>1984</option>
+                            <option>1985</option>
+                            <option>1986</option>
+                            <option>1987</option>
+                            <option>1988</option>
+                            <option>1989</option>
+                            <option>1990</option>
+                            <option>1991</option>
+                            <option>1992</option>
+                            <option>1993</option>
+                            <option>1994</option>
+                            <option>1995</option>
+                            <option>1996</option>
+                            <option>1997</option>
+                            <option>1998</option>
+                            <option>1999</option>
+                            <option>2000</option>
+                            <option>2000</option>
+                            <option>2002</option>
+                            <option>2003</option>
+                            <option>2004</option>
+                            <option>2005</option>
+                            <option>2005</option>
+                            <option>2006</option>
+                            <option>2007</option>
+                            <option>2008</option>
+                            <option>2009</option>
+                            <option>2010</option>
+                        </select><br>
+                    </table>
+
+                </fieldset>
+                <h1>Datos de Registro</h1>
+
+                <fieldset>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" placeholder="coloque su email"><br>
+
+
+                    <label for="passwordreg"  required>Contraseña</label><br>
+                    <input type="password" name="passwordreg" pattern="[^\s]" minlength="4" maxlength="12" required placeholder="Cree una contraseña">
+
+                </fieldset>
+
+
+                <h1>Me interesa</h1>
+                <fieldset>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="atletismo">
+                                <label for="atletismo">Atletismo</label>
+
+                            </td>
+
+
+                            <td>
+                                <input type="checkbox" name="badminton">
+                                <label for="badminton">Badminton</label>
+
+                            </td>
+
+
+                            <td>
+                                <input type="checkbox" name="natacion">
+                                <label for="natacion">Natación</label>
+
+                            </td>
+
+
+                            <td>
+                                <input type="checkbox" name="basquet">
+                                <label for="basquet">Basquet</label>
+
+                            </td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="Futbol">
+                                <label for="fubol">Futbol</label>
+
+                            </td>
+
+
+                            <td>
+                                <input type="checkbox" name="judo">
+                                <label for="judo">Judo</label>
+
+                            </td>
+
+
+                            <td>
+                                
+                                <input type="checkbox" name="volei">
+                                <label for="volei">Volei</label>
+                            </td>
+
+
+                            <td>
+                                
+                                <input type="checkbox" name="karate">
+                                <label for="karate">Karate</label>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="triatlon">
+                                <label for="triatlon">Triatlon</label>
+                            </td>
+                            <td>
+                                
+                                <input type="checkbox" name="excursionismo">
+                                <label for="excursionismo">Excursionismo</label>
+                            </td>
+
+
+                            <td>
+                                <input type="checkbox" name="waterpolo">
+                                <label for="waterpolo">Waterpolo</label>
+                            </td>
+
+
+                            <td>    
+                                <input type="checkbox" name="yoga">
+                                <label for="yoga">Yoga</label>
+                            </td>
+                            
+                        </tr>
+                    </table>
+
+                </fieldset>
+                <input type="checkbox" name="terminos">
+                    <label for="terminos">Acepto los términos</label><br>
+                <fieldset>
+                    
+
+                    <button type="submit">Registrarse</button>
+                    <button type="reset">Clear</button>
+                </fieldset>
+
+
+            </form>
+
+        </article>
+
+    </main>
+
+
+
+
+    <footer>
+        
+        <section>
+            <figure>
+            <a href="https://clubnatacioterrassa.cat" target="_blank"><img src="img/logo.png" alt="Logo club Natació Terrassa" title="Club Natació Terrassas"></a>
+            </figure>
+
+        </section>
+        <section><figure><a href="https://www.terrassa.cat/es/esports" target="_blank"><img src="img/terrassa.png" alt="Logo Ajuntament de terrassa" title="Ajuntament de Terrassa"></a></figure></section>
+        <section>
+            <figure>
+                <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook logo" title="Facebook logo"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram logo" title="Instagram logo"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="img/linkedin.png" alt="LinkedIn logo" title="LinkedIn logo"></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png" alt="Twiiter logo" title="Twiiter logo"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="img/youtube.png" alt="Youtube Logo" title="Youtube Logo"></a>
+            </figure>
+        </section>
+    </footer>
+    
+    
+</body>
+</html>

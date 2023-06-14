@@ -1,0 +1,5 @@
+Lavender: rgb(225, 226, 239)
+Maize:rgb(244, 231, 110)
+Xanthous:rgb(244, 185, 66)
+UCLA Blue: rgb(66, 122, 161)
+Oxford Blue:rgb(5, 32, 74)
